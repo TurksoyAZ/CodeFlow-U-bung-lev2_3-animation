@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+section {
+  width: 400px;
+  height: 400px;
+  background-image: url(../img/illidan\ Storm.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  animation-name: storm;
+}
+
+div {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
+
+.box {
+  font-size: 45px;
+  color: #fff;
+  z-index: 1;
+  padding-top: 250px;
+}
+
+.box1 {
+  animation-name: boksink;
+}
+
+section:hover {
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  transition-timing-function: linear;
+}
+
+section:hover .box1 {
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  transition-timing-function: linear;
+ opacity: 0.3;
+}
+
+@keyframes storm {
+  0% {
+    box-shadow: 0 0 150px rgb(255, 0, 51);
+  }
+
+  10% {
+    box-shadow: 0 0 150px rgb(0, 255, 17);
+  }
+
+  20% {
+    box-shadow: 0 0 150px rgb(163, 93, 136);
+  }
+
+  30% {
+    box-shadow: 0 0 150px rgb(232, 111, 50);
+  }
+
+  40% {
+    box-shadow: 0 0 150px rgb(12, 35, 181);
+  }
+
+  50% {
+    box-shadow: 0 0 150px rgb(255, 0, 132);
+  }
+
+  60% {
+    box-shadow: 0 0 150px rgb(128, 0, 255);
+  }
+
+  70% {
+    box-shadow: 0 0 150px rgb(255, 247, 0);
+  }
+
+  80% {
+    box-shadow: 0 0 150px rgb(0, 255, 229);
+  }
+
+  90% {
+    box-shadow: 0 0 150px rgb(255, 0, 208);
+  }
+
+  100% {
+    box-shadow: 0 0 150px rgb(8, 0, 255);
+  }
+}
+
+@keyframes boksink {
+  0% {
+    background-color: rgb(255, 0, 132);
+  }
+  10% {
+    background-color: rgb(159, 53, 205);
+  }
+  20% {
+    background-color: rgb(205, 53, 147);
+  }
+  30% {
+    background-color: rgb(99, 205, 53);
+  }
+
+  40% {
+    background-color: rgb(53, 56, 205);
+  }
+  50% {
+    background-color: rgb(170, 205, 53);
+  }
+
+  60% {
+    background-color: rgb(205, 53, 66);
+  }
+
+  70% {
+    background-color: rgb(53, 111, 205);
+  }
+
+  80% {
+    background-color: rgb(53, 205, 99);
+  }
+  90% {
+    background-color: rgb(159, 53, 205);
+  }
+
+  100% {
+    background-color: rgb(221, 255, 0);
+  }
+}
